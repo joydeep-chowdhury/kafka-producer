@@ -1,0 +1,5 @@
+zookeeper-server-start.bat E:\kafka_2.13-2.4.0\config\zookeeper.properties
+kafka-server-start.bat E:\kafka_2.13-2.4.0\config\server.properties
+
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
